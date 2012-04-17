@@ -24,6 +24,21 @@
   }
 }
 
+.btn-toolbar .text {
+  display: inline-block;
+  .ie7-inline-block();
+  padding: 4px 10px 4px;
+  margin-bottom: 0; // For input.btn
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  text-align: center;
+  vertical-align: middle;
+
+  // Give IE7 some love
+  .ie7-restore-left-whitespace();
+}
+
+
 // Float them, remove border radius, then re-add to first and last elements
 .btn-group .btn {
   position: relative;
