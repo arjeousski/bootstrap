@@ -44,6 +44,16 @@
   .ie7-restore-left-whitespace();
 }
 
+// Allow input/select/text to be part of button group
+.btn-group input,
+.btn-group select,
+.btn-group .text
+{
+  position: relative;
+  float: left;
+  margin-bottom: 0; // remove bottom margin
+}
+
 
 // Float them, remove border radius, then re-add to first and last elements
 .btn-group > .btn {
@@ -53,14 +63,7 @@
   .border-radius(0);
 }
 
-// Float them, remove border radius, then re-add to first and last elements
-.btn-group input,
-.btn-group select,
-.btn-group .text
-{
-  position: relative;
-  float: left;
-}
+
 
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child {
