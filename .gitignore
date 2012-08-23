@@ -33,4 +33,5 @@ nbproject
 .svn
 .CVS
 .idea
-web.config
+node_modules
+web.configdist
